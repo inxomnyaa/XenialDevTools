@@ -21,6 +21,7 @@ use xenialdan\XenialDevTools\command\ShowProfileCommand;
 use xenialdan\XenialDevTools\command\VanishCommand;
 use xenialdan\XenialDevTools\listener\BossBarWYLAEventListener;
 use xenialdan\XenialDevTools\listener\DelEntityEventListener;
+use xenialdan\XenialDevTools\listener\FakeplayerWithSkinEventListener;
 use xenialdan\XenialDevTools\listener\StopAllBlockUpdatesEventListener;
 use xenialdan\XenialDevTools\listener\TestCameraEventListener;
 use xenialdan\XenialDevTools\listener\TestCustomEmojiManaListener;
@@ -77,6 +78,7 @@ class Loader extends PluginBase
         $this->getServer()->getPluginManager()->registerEvents(new BossBarWYLAEventListener(), $this);
         #$this->getServer()->getPluginManager()->registerEvents(new TestCustomEmojiClockListener(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new TestCustomEmojiManaListener(), $this);
+        $this->getServer()->getPluginManager()->registerEvents(new FakeplayerWithSkinEventListener(), $this);
         API::load($this);
         #$this->vectorTests();
         #$this->reflectionTest();
