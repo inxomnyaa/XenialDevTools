@@ -1,0 +1,9 @@
+---
+name: XenialDevTools
+main: xenialdan\XenialDevTools\Loader
+version: 0.1.9
+api: 3.0.0
+author: XenialDan
+description: random development code for testing and debugging stuff
+soft-depend: [DEVirion, DevTools]
+...
